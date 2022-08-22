@@ -1,0 +1,1 @@
+gcloud functions deploy validateanddeploydags --gen2  --region='us-central1'  --runtime='python39'  --source='gs://lnd-bkt-01/validate_dags.py' --entry-point='validate_n_deploy_dags' --trigger-topic='ma-sabre-sandbox-dags-notification-topic'
